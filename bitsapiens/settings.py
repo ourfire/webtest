@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-=yu8sd)^pw^d$*&2(w64nu)u&*@s*x&4-eej^dcg+71ze@*&lj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bitsapiens.pythonanywhere.com']
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = "bitsapiens.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ["templates"],
+        "DIRS": ["/home/bitsapiens/webtest/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
