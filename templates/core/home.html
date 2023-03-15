@@ -1,127 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html>
 <head>
-  <title>My Website</title>
-  <style>
-    .frog {
-      position: relative;
-      width: 60px;
-      height: 60px;
-    }
-
-    .frog-body {
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: 60px;
-      height: 40px;
-      background-color: green;
-      border-radius: 70px 70px 0 0;
-    }
-
-    .frog-eyes {
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: white;
-      border: 5px solid black;
-    }
-
-    /* Animation */
-
-    @keyframes frog-hop {
-      0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(200px);
-      }
-      100% {
-        transform: translateX(400px);
-      }
-    }
-
-    .frog {
-      animation: frog-hop 10s linear infinite;
-    }
-  </style>
+  <title>BITSAPIENS</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}">
 </head>
+
 <body>
-  <div class="frog">
-    <div class="frog-body"></div>
-    <div class="frog-eyes"></div>
-  </div>
+
+<h1>BITS<br><br>API<br><br>ENS</h1>
+<script src="{% static 'core/script.js' %}"></script>
 </body>
-</html>
-
-
-<head>
-	<style>
-		h1 {
-			font-family: helvetica, regular;
-		}
-	</style>
-</head>
-<body>
-	<h1>42 visions as archetypes...as art ...as life ...the 42 BITS API ENS genesis</h1>
-
-</body>
-
-<body style="background-image: linear-gradient(
- 90deg,
-  hsl(67deg 41% 84%) 1%,
-  hsl(119deg 32% 79%) 35%,
-  hsl(162deg 41% 67%) 46%,
-  hsl(183deg 47% 54%) 54%,
-  hsl(192deg 77% 45%) 60%,
-  hsl(203deg 63% 50%) 64%,
-  hsl(230deg 44% 58%) 67%,
-  hsl(259deg 35% 61%) 70%,
-  hsl(288deg 29% 60%) 73%,
-  hsl(317deg 34% 64%) 75%,
-  hsl(334deg 42% 69%) 76%,
-  hsl(348deg 47% 73%) 78%,
-  hsl(288deg 29% 60%) 73%,
-  hsl(317deg 34% 64%) 75%,
-  hsl(334deg 42% 69%) 76%,
-  hsl(348deg 47% 73%) 78%,
-  hsl(338deg 13% 84%) 85%,
-  hsl(360deg 18% 79%) 86%,
-  hsl(17deg 22% 72%) 87%,
-  hsl(31deg 20% 63%) 89%,
-  hsl(53deg 14% 54%) 92%,
-  hsl(95deg 12% 49%) 100%
-);">
-
-  <h1>BITS</h1>
-
-  <h1>API</h1>
-
-  <h1>ENS</h1>
-
-
-
-<style>
-		p {
-			font-family: helvetica, regular;
-		}
-		p {
-  font-weight: 500;
-}
-	</style>
-
-<body>
-
-
-<div class="frog">
-  <div class="frog-body"></div>
-  <div class="frog-eyes"></div>
-</div>
 
 </html>
