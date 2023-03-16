@@ -11,6 +11,10 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bitsapiens.settings")
+
+if os.environ.get('DJANGO_ENV') == 'production':
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bitsapiens.settings_prod')
+else:
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bitsapiens.settings_dev')
 
 application = get_wsgi_application()
